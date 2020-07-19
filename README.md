@@ -1,5 +1,5 @@
 # Loge-me
 
-Conception et réalisation d'un site immobilier incluant entre autres les avis et notations des utilisateurs.
-Projet réalisé dans le but de passer la soutenance de Concepteur Développeur d'applications.
-Diplôme obtenu le 06/03/2020.
+- Front-end: React js (jsx), Redux.
+- Back-end: Symfony (API REST), Orm Doctrine.
+- Conception et rédaction du cahier des charges, maquettage, méthodologie Merise, sécurité, conception de l'application en couches, hébergement serveur sur Raspbery Pi personnel (pile Lamp), déploiement...
