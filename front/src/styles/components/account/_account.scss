@@ -1,0 +1,37 @@
+.account-component {
+    padding: 2em 1em;
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 #007bff;
+    margin: 2em auto;
+    background-color: $color-white;
+    width: 95%;
+
+    &__title {
+        margin-bottom: 2em;
+    }
+
+    &__title {
+        margin-bottom: 2em;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    &__buttons {
+        margin-top: 2.5em;
+        flex-wrap: wrap;
+
+        &__edit,
+        &__delete {
+            margin-top: 0.5em;
+            width: 100%;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .account-component {
+        width: 80%;
+        margin: 2em auto;
+    }
+}

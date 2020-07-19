@@ -1,0 +1,22 @@
+// Base
+@import 'base/normalize',
+'base/variables',
+'base/base';
+
+// Components
+@import 'components/app/app',
+'components/footer/footer',
+'components/navigation/navigation',
+'components/home/home',
+'components/register/register',
+'components/connexion/connexion',
+'components/account/account',
+'components/forgot-password/forgot-password',
+'components/flash-message/flash-message',
+'components/deposit/deposit',
+'components/map/map',
+'components/images-upload/images-upload',
+'components/become-owner/become-owner',
+'components/post/post',
+'components/search-location/search-location',
+'components/search-results/search-results';

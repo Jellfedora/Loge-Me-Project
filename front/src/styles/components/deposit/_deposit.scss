@@ -1,0 +1,159 @@
+.deposit-component {
+    padding: 2em 1em;
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 #007bff;
+    margin: 2em 0.5em;
+    background-color: $color-white;
+
+    &__title {
+        margin-top: 6em;
+        margin-bottom: 2em;
+    }
+
+    &__form {
+        &__container {
+            padding: 1em;
+
+
+            &__select-adress {
+                background-color: $color-white;
+                border-bottom: #CFCFCF 1px solid;
+                border-left: #CFCFCF 1px solid;
+                border-right: #CFCFCF 1px solid;
+                box-shadow: 8px 8px 0px rgba(44, 43, 43, 0.089);
+                margin-bottom: 1em;
+
+                & p {
+                    text-align: center;
+                    margin: 0;
+                    line-height: 2em;
+                }
+
+                & p:hover {
+                    color: $color-white;
+                    background-color: $color-blue;
+                    cursor: pointer;
+                }
+            }
+
+            &__submit-form {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    &__step-two {
+        &__form {
+            padding: 1em;
+            width: 100%;
+
+            &__isNotGround {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__group {
+                width: 10em;
+
+                &__area,
+                &__pieces,
+                &__bedrooms {
+                    width: 30%;
+                }
+
+                &__logement-type {
+                    width: 100%;
+                }
+            }
+
+            &__container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &__container:nth-child() {
+                width: 1em;
+            }
+        }
+
+    }
+
+}
+
+.deposit-component__step-counter {
+    width: 100%;
+    margin: auto;
+
+    &__step {
+        cursor: pointer;
+    }
+
+    &__step:hover {
+        color: $color-blue;
+        border-color: $color-blue;
+    }
+}
+
+.progressbar {
+    counter-reset: step;
+}
+
+.progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressbar li:first-child:after {
+    content: none;
+}
+
+.progressbar li.active {
+    color: green;
+}
+
+.progressbar li.active:before {
+    border-color: #55b776;
+}
+
+.progressbar li.active+li:after {
+    background-color: #55b776;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .deposit-component {
+        width: 80%;
+        margin: 2em auto;
+    }
+}

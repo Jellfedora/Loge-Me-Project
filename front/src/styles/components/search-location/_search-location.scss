@@ -1,0 +1,101 @@
+.search-location {
+    background-color: $color-white;
+    box-shadow: 0 0 6px 0 #007bff;
+    padding: 1em 1em 0.5em 1em;
+    margin: 2em 0.5em auto;
+
+    &__title {
+        margin: 1em;
+    }
+
+    &__form {
+        &__logement-type {
+            margin: 1em;
+        }
+
+        &__localisation {
+            margin: 1em;
+
+            &__form-input {
+                display: block;
+                width: 100%;
+                height: calc(1.5em + .75rem + 2px);
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: .25rem;
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            }
+
+            &__show-localisation-choice {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: #fff;
+                box-shadow: 0 0 2px 0 black;
+                margin: auto;
+                width: 99%;
+
+                & span {
+                    border-radius: .25rem;
+                    width: 100%;
+                    text-align: left;
+                    padding-left: 1em;
+                }
+
+                & span:hover {
+                    background-color: #007bff;
+                    color: #fff;
+                }
+            }
+        }
+
+        &__rent {
+            margin: 1em;
+        }
+
+        &__area {
+            margin: 1em;
+        }
+    }
+
+    &__advanced-search-link {
+        display: block;
+        margin-top: 1.5em;
+        font-size: 0.7em;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .home-component {
+        width: 80%;
+
+        margin: auto;
+
+        &__new-housings {
+            &__container {
+                display: flex;
+                justify-content: space-around;
+
+            }
+
+            &__housing {
+                width: 49%;
+                flex: none;
+
+                &__carousel {
+                    width: 100%;
+                }
+
+                &__container {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

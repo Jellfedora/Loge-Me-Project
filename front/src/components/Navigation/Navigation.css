@@ -1,0 +1,24 @@
+.navigation-bar {
+  background: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  padding: 30px 0;
+}
+
+.navigation-bar ul {
+  padding: 0;
+}
+
+.navigation-bar ul a {
+  margin: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.navigation-bar ul a:hover {
+  text-decoration: underline;
+}

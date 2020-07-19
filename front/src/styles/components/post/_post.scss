@@ -1,0 +1,109 @@
+.post-component {
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 #007bff;
+    margin: 2em 0.5em;
+    background-color: #F8F9FA;
+
+    &__housing {
+        &__title {
+            padding: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #007bff;
+        }
+
+        &__top {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1em;
+
+            &__localisation {
+                font-size: 1em;
+            }
+
+            &__rent {
+                &__price {
+                    font-weight: bold;
+                    font-size: 1.1em;
+                }
+
+                &__info {
+                    font-size: 0.7em;
+                    position: relative;
+                    bottom: 0.8em;
+                }
+            }
+        }
+
+        &__rating {
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        &__informations,
+        &__description,
+        &__map,
+        &__commentary,
+        &__contact {
+            padding: 1em;
+
+            & h3 {
+                text-align: center;
+                font-size: 1.2em;
+                font-weight: bold;
+                color: $color-blue;
+                margin-bottom: 1em;
+            }
+        }
+
+        &__informations {
+            font-size: 1em;
+            color: $color-grey;
+            box-shadow: 0 4px 2px -2px $color-blue;
+
+            &__title {
+                font-weight: bold;
+            }
+        }
+
+        &__carousel {
+            width: 100%;
+            padding-bottom: 1em;
+            box-shadow: 0 4px 2px -2px $color-blue;
+        }
+
+        &__description {
+            box-shadow: 0 4px 2px -2px $color-blue;
+        }
+
+        &__map {
+            box-shadow: 0 4px 2px -2px $color-blue;
+            color: $color-grey;
+
+            &__title {
+                font-weight: bold;
+            }
+
+            &__component {
+                border: none;
+            }
+
+        }
+
+        &__commentary {
+            box-shadow: 0 4px 2px -2px $color-blue;
+
+            & p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .post-component {
+        width: 80%;
+        margin: 2em auto;
+    }
+}

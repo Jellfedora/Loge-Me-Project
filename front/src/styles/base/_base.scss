@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap');
+
+.app-loge-me {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2,
+a {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+
+dl,
+ol,
+ul {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: $color-blue;
+}
+
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+}

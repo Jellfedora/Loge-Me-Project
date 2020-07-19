@@ -1,0 +1,19 @@
+.register-component {
+    padding: 2em 1em;
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 #007bff;
+    margin: 2em auto;
+    background-color: $color-white;
+
+    &__title {
+        margin-bottom: 2em;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .register-component {
+        width: 80%;
+        margin: 2em auto;
+    }
+}

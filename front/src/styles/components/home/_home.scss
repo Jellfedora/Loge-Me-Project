@@ -1,0 +1,194 @@
+.home-component {
+  &__introduction {
+    text-align: center;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__text {
+      padding: 0.5em;
+      color: $color-white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    img {
+      max-height: 160px;
+      width: 100%;
+    }
+  }
+
+  &__introduction:before {
+    content: ' ';
+    background-image: url(../../../components/Home/illustration-location2.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    background-position: center;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(0.8);
+  }
+
+  &__search-home {
+    border-radius: 30px;
+    box-shadow: 0 0 6px 0 $color-blue;
+    margin: 2em 0.5em;
+    background-color: $color-white;
+    min-height: 25em;
+
+    &__switch-links {
+      display: flex;
+      justify-content: space-around;
+
+
+      &__link {
+        background-color: $color-blue;
+        width: 33.2%;
+        color: $color-white;
+        line-height: 2em;
+
+        & h2 {
+          line-height: 2;
+        }
+      }
+    }
+
+    &__container {
+      &__images {
+        height: 10em;
+        width: 100%;
+        margin-bottom: 0.5em;
+      }
+
+      &__housing {
+        height: 100%;
+        padding: 1.5em;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+
+        &__form {
+          &__check-box {
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+      }
+
+      &__tenant {
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+        height: 100%;
+      }
+
+      &__owner {
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+        height: 100%;
+      }
+    }
+  }
+
+  &__new-housings {
+    margin: 2em 0.5em auto;
+
+    &__title {
+      text-transform: uppercase;
+      margin: 2em 0 1em 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &__housing {
+      background-color: $color-white;
+      box-shadow: 0 0 6px 0 $color-blue;
+      margin-bottom: 1.5em;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+
+      &__carousel {
+        &__img {
+          height: 100%;
+          width: 100%;
+          background-size: cover;
+        }
+      }
+
+      &__container {
+        padding: 1em;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+        &__top {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          width: 100%;
+
+          &__type {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color-blue;
+          }
+
+          &__rent {
+
+            &__price {
+              font-weight: bold;
+              font-size: 1.1em;
+            }
+
+            &__info {
+              font-size: 0.7em;
+              position: relative;
+              bottom: 0.8em;
+
+            }
+          }
+
+        }
+
+        &__informations {
+          font-weight: bold;
+          width: 100%;
+          text-align: left;
+        }
+
+        &__description {
+          color: #656d78;
+          font-size: 0.8em;
+          width: 100%;
+          text-align: left;
+        }
+
+        &__rating {
+          text-align: center;
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.button-switch-owner {
+  border-top-left-radius: 27px;
+}
+
+.button-switch-tenant {
+  border-top-right-radius: 27px;
+}

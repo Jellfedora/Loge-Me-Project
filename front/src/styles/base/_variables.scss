@@ -1,0 +1,18 @@
+$color-dark:#020202;
+$color-white:#F8F9FA;
+$color-blue:#007bff;
+$color-green:#51A351;
+$color-yellow:#F89406;
+$color-grey:#656d78;
+
+.blue {
+    background-color: $color-blue;
+}
+
+.text-blue:nth-child(1n) {
+    color: $color-blue !important;
+}
+
+.text-white:nth-child(1n) {
+    color: $color-white !important;
+}

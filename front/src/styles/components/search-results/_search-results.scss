@@ -1,0 +1,32 @@
+.search-results-components {
+    margin: 0 auto 2em auto;
+    width: 80%;
+
+    &__container {
+        margin-bottom: 2em;
+        // display: flex;
+
+        & div {
+            margin: auto;
+        }
+
+    }
+}
+
+// Extra Large devices (desktops, 1200px and up)
+@media (min-width: 900px) {
+    .search-results-components {
+        // margin: 0 auto 2em auto;
+        // width: 80%;
+
+        &__container {
+            // margin-bottom: 2em;
+            display: flex;
+
+            & div {
+                // margin: auto;
+            }
+
+        }
+    }
+}
