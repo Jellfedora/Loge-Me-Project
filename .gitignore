@@ -1,0 +1,13 @@
+front/node_modules
+front/yarn-error.log
+front/.env.development.local
+front/.env.production.local
+rest_api/var
+rest_api/vendor
+rest_api/.env
+rest_api/.env.local
+rest_api/.env.test
+rest_api/deploy.php
+rest_api/config/jwt/private.pem
+rest_api/config/jwt/public.pem
+rest_api/public/bundles
